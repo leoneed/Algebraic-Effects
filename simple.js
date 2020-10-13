@@ -1,8 +1,4 @@
-const pause = async ms =>
-    new Promise(resolve =>
-        setTimeout(resolve, ms));
-
-const handle = (fn, handler) => fn.perform = handler;
+import { pause, handle } from './libs.js';
 
 const getName = async (user) => {
     if (!user.name) {
